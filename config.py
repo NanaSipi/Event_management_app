@@ -1,0 +1,1 @@
+import osclass Config:    SECRET_KEY = os.environ.get('SECRET_KEY') or 'your_secret_key'  # Secret key for security    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///site.db'  # Database URI    SQLALCHEMY_TRACK_MODIFICATIONS = False  # Disabling modification tracking for SQLAlchemy    DEBUG = True  # Enable detailed error logs for debugging
